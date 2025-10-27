@@ -22,21 +22,21 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      {/* <div className="container position-relative pt-9 text-white">
-        <h1 className="fw-bold text-white display-5 mb-3">
+      <div className="container position-absolute bottom-0 start-0 end-0 pt-9 text-white">
+        {/* <h1 className="fw-bold text-white display-5 mb-3">
           Reliable Repairs. Fast Service. Trusted Experts.
         </h1>
         <p className="lead mb-4">
           We keep your car running smoothly with expert repair, maintenance,
           and care you can trust.
-        </p>
+        </p> */}
         <Link
           href="/page-contact"
           className="btn btn-light fw-bold px-8 mb-4"
         >
           Book Now
         </Link>
-      </div> */}
+      </div>
     </section>
   );
 }

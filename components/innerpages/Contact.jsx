@@ -5,12 +5,15 @@ import { useState, useEffect, useRef } from "react";
 import ContactMobile from "./ContactMobile";
 export default function Contact1() {
   const [formData, setFormData] = useState({
+    date: "",
+    make: "",
+    model: "",
+    registration: "",
+    mileage: "",
     firstName: "",
-    lastName: "",
     email: "",
     phone: "",
-    company: "",
-    message: "",
+    postcode: "",
   });
 
   const [loading, setLoading] = useState(false);
@@ -40,9 +43,9 @@ export default function Contact1() {
     e.preventDefault();
     setLoading(true);
 
-    const { firstName, lastName, email, phone, company, message } = formData;
+    const { date, make, model, registration, firstName, lastName, email, phone } = formData;
 
-    if (!firstName || !lastName || !email || !message) {
+    if (!firstName || !email || !date || !make || !model || !registration   ) {
       toast.error("❌ Please fill in all required fields.");
       setLoading(false);
       return;
@@ -78,7 +81,7 @@ export default function Contact1() {
         toast.success(
           <div className="text-center">
             <img
-              src="/assets/images/common/logo-dark.svg"
+              src="/assets/images/branding/logo-light.png"
               alt="Logo"
               style={{ width: "100px", margin: "0 auto" }}
             />
@@ -86,12 +89,15 @@ export default function Contact1() {
           </div>
         );
         setFormData({
+          date: "",
+          make: "",
+          model: "",
+          registration: "",
+          mileage: "",
           firstName: "",
-          lastName: "",
           email: "",
           phone: "",
-          company: "",
-          message: "",
+          postcode: "",
         });
         grecaptcha.reset(recaptchaId.current);
       } else {
@@ -124,17 +130,17 @@ export default function Contact1() {
             </div>
 
             <ToastContainer
-        position="top-center"
-        autoClose={4000}
-        hideProgressBar={true}
-        newestOnTop={true}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        className="toast-center"
-        toastClassName="bg-dark text-white rounded p-3 backdrop-blur-sm bg-opacity-80"
+              position="top-center"
+              autoClose={4000}
+              hideProgressBar={true}
+              newestOnTop={true}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              className="toast-center"
+              toastClassName="bg-dark text-white rounded p-3 backdrop-blur-sm bg-opacity-80"
       />
 
             {/* Contact Form */}

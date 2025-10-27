@@ -4,7 +4,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { useState, useEffect, useRef } from "react";
 import ContactMobile from "./ContactMobile";
 export default function Contact1() {
-  export default function Contact1() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",

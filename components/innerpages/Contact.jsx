@@ -10,7 +10,7 @@ export default function Contact1() {
     model: "",
     registration: "",
     mileage: "",
-    firstName: "",
+    fullName: "",
     email: "",
     phone: "",
     postcode: "",
@@ -43,7 +43,7 @@ export default function Contact1() {
     e.preventDefault();
     setLoading(true);
 
-    const { date, make, model, registration, firstName, lastName, email, phone } = formData;
+    const { date, make, model, registration, fullName, lastName, email, phone } = formData;
 
     if (!firstName || !email || !date || !make || !model || !registration   ) {
       toast.error("❌ Please fill in all required fields.");
@@ -69,7 +69,7 @@ export default function Contact1() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          name: `${firstName} ${lastName}`,
+          name: `${fullName}`,
           email,
           subject: `Request from ${firstName}`,
           message: `Phone: ${phone || "N/A"}\nCompany: ${company || "N/A"}\n\n${message}`,
@@ -81,7 +81,7 @@ export default function Contact1() {
         toast.success(
           <div className="text-center">
             <img
-              src="/assets/images/branding/logo-light.png"
+              src="/assets/images/branding/logo.png"
               alt="Logo"
               style={{ width: "100px", margin: "0 auto" }}
             />
@@ -94,7 +94,7 @@ export default function Contact1() {
           model: "",
           registration: "",
           mileage: "",
-          firstName: "",
+          fullName: "",
           email: "",
           phone: "",
           postcode: "",
@@ -224,9 +224,9 @@ export default function Contact1() {
           className="form-control h-48px w-full"
           type="text"
           name="Name"
-          value={formData.firstName}
+          value={formData.fullName}
           onChange={handleChange}
-          placeholder="Name*"
+          placeholder="full Name*"
           required
         />
       </div>

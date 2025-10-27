@@ -1,4 +1,5 @@
 "use client";
+import Script from "next/script"; // ✅ ADD THIS LINE
 import Context from "@/context/Context";
 import "../public/assets/css/main.scss";
 import "swiper/css/virtual";
@@ -40,7 +41,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" dir="ltr">
       <body>
-     
+       {/* ✅ reCAPTCHA script here */}
+        <Script
+        src="https://www.google.com/recaptcha/api.js?render=explicit"
+        strategy="beforeInteractive"        
+        async        
+        defer
+        />
         <Context>
           <ParallaxProvider>{children}</ParallaxProvider>
           <MobileMenu />

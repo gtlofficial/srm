@@ -15,6 +15,7 @@
     "imagesloaded": "^5.0.0",
     "isotope-layout": "^3.0.6",
     "next": "^15.5.6",
+    "nodemailer": "^7.0.10",
     "photoswipe": "^5.4.4",
     "rc-slider": "^11.1.5",
     "react": "19.0.0",

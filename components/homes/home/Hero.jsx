@@ -12,7 +12,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="position-absolute top-0 start-0 w-100 h-100">
         <Image
-          src="/assets/images/homepage/banner2.jpg"
+          src="/assets/images/homepage/BUMP_SCRATCH_SMASH.jpg"
           alt="Car repair banner"
           fill
           priority
@@ -22,7 +22,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container position-relative pt-9 text-white">
+      {/* <div className="container position-relative pt-9 text-white">
         <h1 className="fw-bold text-white display-5 mb-3">
           Reliable Repairs. Fast Service. Trusted Experts.
         </h1>
@@ -36,7 +36,7 @@ export default function Hero() {
         >
           Book Now
         </Link>
-      </div>
+      </div> */}
     </section>
   );
 }

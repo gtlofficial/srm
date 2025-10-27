@@ -61,7 +61,7 @@ export const featureItems = [
   },
   {
     order: "order-0",
-    imgSrc: "/assets/images/homepage/s2.jpg",
+    imgSrc: "/assets/images/homepage/KNOW_YOUR_RIGHTS.jpg",
     alt: "INSURANCE FAULT AND NON-FAULT",
     title: "INSURANCE FAULT AND NON-FAULT",
     description: "Insurance Repairs – Your Right, Your Choice",

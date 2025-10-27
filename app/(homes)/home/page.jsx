@@ -33,11 +33,10 @@ export default function HomePage() {
                     className="brands panel vstack gap-3 sm:gap-4 xl:gap-5 text-center"
                     data-anime="onview: -100; translateY: [-16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 350;"
                   ><h2 className="h3 text-white sm:h2 lg:h1 xl:display-6 m-0">
-                Brands We Serve
+                We Repair All Makes & Model
               </h2>
                     <p className="fs-6 sm:fs-5 lg:fs-4 xl:fs-3 fw-medium">
-                      14,000+ customers large and small rely on us for trust
-                      transformation
+                      Guaranteed Quality.
                     </p>
                     <div className="block-panel panel">
                       <div className="element-brands text-black dark:text-white mask-x">

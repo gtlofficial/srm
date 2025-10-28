@@ -66,6 +66,7 @@ export async function POST(req) {
         <p><strong>Postcode:</strong> ${postcode}</p>    
         <hr>    
         <p><strong>Message:</strong><br/>${message.replace(/\n/g, "<br/>")}</p>
+        <p>
 <hr>
   © SRM Vehicle Repair Centre | <a href="https://smart-route-motors.vercel.app/" style="color:#5d5b5b;text-decoration:none;">www.smart-route-motors.vercel.app</a><br>
   Please contact us at <a href="mailto:srm.vehiclerepaircentre@gmail.com" style="color:#5d5b5b;text-decoration:none;">srm.vehiclerepaircentre@gmail.com</a> for any inquiries.

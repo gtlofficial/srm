@@ -43,7 +43,7 @@ export default function Contact1() {
     e.preventDefault();
     setLoading(true);
 
-    const { date, make, model, registration, firstName, lastName, email, phone } = formData;
+    const { date, make, model, registration, firstName, email, phone, mileage } = formData;
 
     if (!firstName || !email || !date || !make || !model || !registration) {
       toast.error("❌ Please fill in all required fields.");
@@ -68,10 +68,17 @@ export default function Contact1() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          name: `${firstName} ${lastName}`,
-          email,
-          subject: `Request from ${firstName}`,
-          message: `Phone: ${phone || "N/A"}\nPostcode: ${formData.postcode || "N/A"}\n\n${formData.message || ""}`,
+          name: `${firstName}`,
+          email: `${email}`,
+          phone: `${phone}`,
+          postcode: `${postcode}`,
+          date: `${date}`,
+          make: `${make}`,
+          model: `${model}`,
+          registration: `${registration}`,
+          mileage: `${mileage}`,
+          subject: `New Inquiry from ${firstName}`,
+           message: `Phone: ${phone || "N/A"}\nPostcode: ${formData.postcode || "N/A"}\n\n${formData.message || ""}`,
 
           recaptchaToken,
         }),
@@ -159,7 +166,7 @@ export default function Contact1() {
                   <h3 className="text-lg font-semibold mb-2">Booking Date</h3>
                   <p className="text-sm mb-3">Click on dates that suit you</p>
                   <input
-                    className="form-control min-h-100px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
+                    className="form-control min-h-100px w-250px bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                     type="date"
                     name="date"
                     value={formData.date}

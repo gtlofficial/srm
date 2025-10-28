@@ -6266,6 +6266,9 @@ textarea.form-control-lg {
 .pt-8 {
   padding-top: 4rem !important;
 }
+.pt-8-5{
+    padding-top: 5rem !important;
+}
 .pt-9 {
   padding-top: 6rem !important;
 }
@@ -7328,6 +7331,9 @@ textarea.form-control-lg {
   .sm\:pt-8 {
     padding-top: 4rem !important;
   }
+  .sm\:pt-8-5 {
+    padding-top: 5rem !important;
+  }
   .sm\:pt-10 {
     padding-top: 8rem !important;
   }
@@ -7526,6 +7532,9 @@ textarea.form-control-lg {
   }
   .md\:pt-8 {
     padding-top: 4rem !important;
+  }
+  .md\:pt-8-5 {
+    padding-top: 5rem !important;
   }
   [dir="ltr"] .ltr\:md\:pe-8 {
     padding-right: 4rem !important;
@@ -7915,6 +7924,9 @@ textarea.form-control-lg {
   }
   .lg\:pt-8 {
     padding-top: 4rem !important;
+  }
+  .lg\:pt-8-5 {
+    padding-top: 5rem !important;
   }
   .lg\:pt-10 {
     padding-top: 8rem !important;

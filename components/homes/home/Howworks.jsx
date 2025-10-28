@@ -44,7 +44,7 @@ export default function Howworks() {
                    At SRM Vehicle Repair Centre, we specialise in bringing vehicles back to life and perfecting every imperfection. From spraying a bike frame to carrying out a full respray on a van — and everything in between — our team delivers precision, passion, and unmatched quality in every job we do.<br></br>
 Based in Oldham, we proudly serve customers across the North West and beyond. With over 25 years of industry experience, our reputation for high-quality workmanship is recognised nationwide. We follow approved repair guidelines and use only premium materials designed to withstand the UK’s challenging climate and road conditions.
                   </p>
-                  <a class="btn btn-secondary mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" href="/page-about">Learn More</a>
+                  <a className="btn btn-secondary mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" href="/page-about">Learn More</a>
                   
                 </div>
               </div>
@@ -82,7 +82,7 @@ Based in Oldham, we proudly serve customers across the North West and beyond. Wi
                       data-uc-accordion="collapsible: false"
                       style={{ "--divider-gap": "40px" }}
                     >
-                        <a class="btn btn-secondary mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" href="/page-faqs">Learn More</a>
+                        <a className="btn btn-secondary mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" href="/page-faqs">Learn More</a>
                     </ul>
                   </div>
                 </div>

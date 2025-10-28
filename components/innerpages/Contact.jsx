@@ -63,7 +63,6 @@ export default function Contact1() {
       setLoading(false);
       return;
     }
-
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -72,7 +71,7 @@ export default function Contact1() {
           name: `${firstName} ${lastName}`,
           email,
           subject: `Request from ${firstName}`,
-         message: `Phone: ${phone || "N/A"}\nPostcode: ${formData.postcode || "N/A"}\n\n${formData.message || ""}`,
+          message: `Phone: ${phone || "N/A"}\nPostcode: ${formData.postcode || "N/A"}\n\n${formData.message || ""}`,
 
           recaptchaToken,
         }),
@@ -162,7 +161,7 @@ export default function Contact1() {
                   <input
                     className="form-control min-h-100px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                     type="date"
-                    name="date" 
+                    name="date"
                     value={formData.date}
                     onChange={handleChange}
                     required
@@ -174,23 +173,23 @@ export default function Contact1() {
                   <h3 className="text-lg font-semibold mb-2">About Your Vehicle</h3>
                   <div className="row child-cols-12 sm:child-cols-6 g-2">
                     <div>
-                      
+
                       <input
                         className="form-control min-h-100px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                         type="text"
-                        name="make" 
+                        name="make"
                         value={formData.make}
                         onChange={handleChange}
                         placeholder="Make*"
                         required
                       />
-                      
+
                     </div>
                     <div>
                       <input
                         className="form-control min-h-100px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                         type="text"
-                        name="model" 
+                        name="model"
                         value={formData.model}
                         onChange={handleChange}
                         placeholder="Model*"
@@ -278,14 +277,14 @@ export default function Contact1() {
                   <h3 className="text-lg font-semibold mb-2">Comments</h3>
 
                   <textarea
-                      className="form-control min-h-100px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      placeholder="Further relevant information/comments:*"
-                      required
-                    />
- 
+                    className="form-control min-h-100px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    placeholder="Further relevant information/comments:*"
+                    required
+                  />
+
                 </div>
                 {/* Vehicle Condition Section */}
                 <div className="p-3 dark:text-white">

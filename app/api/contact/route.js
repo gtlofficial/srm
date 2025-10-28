@@ -5,7 +5,7 @@ export const dynamic = "force-dynamic";
 export async function POST(req) {
   try {
     const body = await req.json();
-    const { name, email, subject, message, recaptchaToken } = body;
+    const { name, email, date, make, model, registration, mileage, phone, postcode, subject, message, recaptchaToken } = body;
 
     if (!name || !email || !message || !recaptchaToken) {
       return new Response(JSON.stringify({ error: "Missing fields" }), { status: 400 });
@@ -39,11 +39,38 @@ export async function POST(req) {
       replyTo: email,
       subject: subject || "New Request",
       html: `
-        <h2>New Contact Form Submission</h2>
+      <div style="font-family:Arial,sans-serif;color:#333;padding:20px;background:#cdcdcd;border:2px solid #8acb37;max-width:500px;margin:0 auto;border-radius:8px;">
+    <div style="text-align:center; margin-bottom:20px;">
+      <img src="https://smart-route-motors.vercel.app/assets/images/branding/logo.png" alt="SRM Vehicle Repair Centre" width="200" style="margin-bottom:10px;" />
+    </div>
+        <h2>Customer Submitted Vehicle Details</h2>
+        <hr>
+        <p><strong>SUBJECT:</strong> ${subject || "N/A"}</p>
+        <hr>
         <p><strong>Name:</strong> ${name}</p>
+        <hr>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Subject:</strong> ${subject || "N/A"}</p>
+        <hr>
+        <p><strong>Date:</strong> ${date}</p>
+        <hr>
+        <p><strong>Make:</strong> ${make}</p>
+        <hr>
+        <p><strong>Model:</strong> ${model}</p>
+        <hr>
+        <p><strong>Registration:</strong> ${registration}</p>
+        <hr>
+        <p><strong>Mileage:</strong> ${mileage}</p>
+        <hr>
+        <p><strong>Phone:</strong> ${phone}</p>
+        <hr>
+        <p><strong>Postcode:</strong> ${postcode}</p>    
+        <hr>    
         <p><strong>Message:</strong><br/>${message.replace(/\n/g, "<br/>")}</p>
+<hr>
+  © SRM Vehicle Repair Centre | <a href="https://smart-route-motors.vercel.app/" style="color:#5d5b5b;text-decoration:none;">www.smart-route-motors.vercel.app</a><br>
+  Please contact us at <a href="mailto:srm.vehiclerepaircentre@gmail.com" style="color:#5d5b5b;text-decoration:none;">srm.vehiclerepaircentre@gmail.com</a> for any inquiries.
+</p>
+        </div>
       `,
     });
 
@@ -55,17 +82,17 @@ export async function POST(req) {
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; border: 1px solid #eee; padding: 20px;">
         <div style="text-align: center; margin-bottom: 20px;">
         <a href="https://smart-route-motors.vercel.app" target="_blank" style="display: inline-block;">
-          <img src="https://smart-route-motors.vercel.app/assets/images/branding/logo-light.png" alt="srm vehicle repair centre" width="250" />
+          <img src="https://smart-route-motors.vercel.app/assets/images/branding/logo.png" alt="srm vehicle repair centre" width="250" />
           </a>
         </div>
-        <h2 style="color: #333;"><span" style="color: #fe8f00;">Hi</span> ${name},</h2>
+        <h2 style="color: #333;"><span" style="color: #232059;">Hi</span> ${name},</h2>
         <p style="color: #555;">
-          Thanks for reaching out to <strong>https://smart-route-motors.vercel.app/assets/images/branding/logo-light.png</strong>! We've received your message and our team will get back to you within <strong>12 business hours</strong>.
+          Thanks for reaching out to <strong>SRM Vehicle Repair Centre</strong>! We've received your message and our team will get back to you within <strong>12 business hours</strong>.
         </p>
         <p style="color: #555;">
           Your support ticket number is: <strong>#${ticketNumber}</strong>
         </p>
-        <p style="color: #555;">While you wait, feel free to check out our <a href="https://smart-route-motors.vercel.app/faq" style="color: #fe8f00;">FAQs</a> or <a href="https://smart-route-motors.vercel.app/page-contact" style="color: #fe8f00;">Support Page</a>.</p>
+        <p style="color: #555;">While you wait, feel free to check out our <strong><a href="https://smart-route-motors.vercel.app/page-faqs" style="color: #232059;">FAQs</a></strong> or <strong><a href="https://smart-route-motors.vercel.app/page-contact" style="color: #232059;">Support Page</a></strong>.</p>
         <hr style="margin: 30px 0;" />
         <p style="color: #888; font-size: 12px;">
           This is an automated message. If you did not submit this form, please disregard this email.

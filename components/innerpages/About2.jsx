@@ -45,7 +45,7 @@ We operate a professional spray booth and oven system to achieve superior paint 
 
 
             
-              <div className="panel mt-6">
+              {/* <div className="panel mt-6">
                 <div className="row child-cols-6 lg:child-cols-4 justify-center g-3 col-match">
                   {panelsData.map((panel, index) => (
                     <div key={index}>
@@ -63,7 +63,7 @@ We operate a professional spray booth and oven system to achieve superior paint 
                     </div>
                   ))}
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

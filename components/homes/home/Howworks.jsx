@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Accordion from "@/components/common/Accordion";
+import AccordionList from "@/components/common/AccordionList";
 
 export default function Howworks() {
   return (
@@ -11,7 +11,7 @@ export default function Howworks() {
       <div className="section-outer panel">
         <div className="container sm:max-w-lg xl:max-w-xl">
           <div className="section-inner panel pt-6">
-            
+
             {/* --- About Us Block --- */}
             <div className="row child-cols-12 lg:child-cols-6 col-match items-center g-0">
               {/* Image */}
@@ -41,11 +41,11 @@ export default function Howworks() {
                 >
                   <h3 className="h3 lg:h2 m-0">About SRM Vehicle Repair Centre</h3>
                   <p className="fs-6 lg:fs-5">
-                   At SRM Vehicle Repair Centre, we specialise in bringing vehicles back to life and perfecting every imperfection. From spraying a bike frame to carrying out a full respray on a van — and everything in between — our team delivers precision, passion, and unmatched quality in every job we do.<br></br>
-Based in Oldham, we proudly serve customers across the North West and beyond. With over 25 years of industry experience, our reputation for high-quality workmanship is recognised nationwide. We follow approved repair guidelines and use only premium materials designed to withstand the UK’s challenging climate and road conditions.
+                    At SRM Vehicle Repair Centre, we specialise in bringing vehicles back to life and perfecting every imperfection. From spraying a bike frame to carrying out a full respray on a van — and everything in between — our team delivers precision, passion, and unmatched quality in every job we do.<br></br>
+                    Based in Oldham, we proudly serve customers across the North West and beyond. With over 25 years of industry experience, our reputation for high-quality workmanship is recognised nationwide. We follow approved repair guidelines and use only premium materials designed to withstand the UK’s challenging climate and road conditions.
                   </p>
-                  <a className="btn btn-secondary mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" href="/page-about">Learn More</a>
-                  
+                  <a className="btn btn-md btn-primary mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" href="/page-about">Learn More</a>
+
                 </div>
               </div>
             </div>
@@ -82,8 +82,9 @@ Based in Oldham, we proudly serve customers across the North West and beyond. Wi
                       data-uc-accordion="collapsible: false"
                       style={{ "--divider-gap": "40px" }}
                     >
-                        <a className="btn btn-secondary mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" href="/page-faqs">Learn More</a>
+                      <AccordionList limit={4} />
                     </ul>
+                    <a className="btn btn-md btn-primary mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" href="/page-faqs">Learn More</a>
                   </div>
                 </div>
               </div>

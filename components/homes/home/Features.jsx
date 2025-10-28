@@ -14,7 +14,7 @@ export default function Features() {
       <div className="section-outer panel py-4 md:py-6 xl:py-9">
         <div className="container sm:max-w-lg xl:max-w-xl">
           <div className="section-inner panel">
-            
+
             {/* --- Section Header --- */}
             <div
               className="panel vstack items-center gap-2 xl:gap-3 mb-4 sm:mb-6 lg:mb-8 sm:max-w-600px lg:max-w-700px xl:max-w-800px mx-auto text-center"
@@ -63,7 +63,7 @@ export default function Features() {
                         </p>
 
                         {/* Hover Button */}
-                        <button className="btn btn-secondary mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <button className="btn btn-md btn-primary mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                           Learn More
                         </button>
                       </div>

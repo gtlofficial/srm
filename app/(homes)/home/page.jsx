@@ -7,6 +7,7 @@ import Hero from "@/components/homes/home/Hero";
 import Howworks from "@/components/homes/home/Howworks";
 import Hotspot from "@/components/homes/home/Hotspot";
 import Testimonials from "@/components/homes/home/Testimonials";
+import ContactLinks from "@/components/innerpages/ContactLinks";
 import React from "react";
 export const metadata = {
   title:
@@ -20,7 +21,7 @@ export default function HomePage() {
       <div className=" page-wrapper uni-body panel bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200 overflow-x-hidden bp-xs bp-sm bp-md bp-lg dom-ready bp-xl bp-xxl">
         {/* <Topbar /> */}
         <Header />
-        <div id="wrapper" className="wrap"> 
+        <div id="wrapper" className="wrap">
           <Hero />
           <div
             id="companies_sponsores"
@@ -33,8 +34,8 @@ export default function HomePage() {
                     className="brands panel vstack gap-3 sm:gap-4 xl:gap-5 text-center"
                     data-anime="onview: -100; translateY: [-16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 350;"
                   ><h2 className="h3 text-white sm:h2 lg:h1 xl:display-6 m-0">
-                We Repair All Makes & Model
-              </h2>
+                      We Repair All Makes & Model
+                    </h2>
                     <p className="fs-6 sm:fs-5 lg:fs-4 xl:fs-3 fw-medium">
                       Guaranteed Quality.
                     </p>
@@ -51,6 +52,9 @@ export default function HomePage() {
           <Features />
           <hr className="w-100 m-0 d-block lg:d-none" />
           <Howworks />
+          <div className="pt-6">
+            <ContactLinks />
+          </div>
           <Testimonials />
         </div>
         <Footer />

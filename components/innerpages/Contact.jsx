@@ -72,7 +72,8 @@ export default function Contact1() {
           name: `${firstName} ${lastName}`,
           email,
           subject: `Request from ${firstName}`,
-          message: `Phone: ${phone || "N/A"}\nCompany: ${company || "N/A"}\n\n${message}`,
+         message: `Phone: ${phone || "N/A"}\nPostcode: ${formData.postcode || "N/A"}\n\n${formData.message || ""}`,
+
           recaptchaToken,
         }),
       });

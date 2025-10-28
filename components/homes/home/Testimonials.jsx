@@ -10,7 +10,7 @@ export default function Testimonials() {
       id="clients_feedbacks"
       className="clients-feedbacks section panel overflow-hidden"
     >
-      <div className="section-outer panel py-6 xl:py-9">
+      <div className="section-outer panel py-2 xl:py-2">
         <div className="container">
           <div className="section-inner panel">
             <div
@@ -50,7 +50,7 @@ export default function Testimonials() {
                   {testimonials.map((testimonial, index) => (
                     <SwiperSlide key={index}>
                       <div className="px-3 sm:px-4 py-4 panel vstack justify-between gap-3 rounded-2 bg-secondary dark:bg-black shadow-sm hover:shadow-md transition-shadow duration-300">
-                        
+
                         {/* Quote */}
                         <p className="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70 leading-relaxed">
                           “{testimonial.text}”

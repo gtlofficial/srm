@@ -40,7 +40,7 @@ export default function ContactLinks() {
                       </div>
                       <h5 className="h5 m-0">{panel.title}</h5>
                       <p className="fs-6 opacity-70 dark:opacity-80">
-                        {panel.description}<br/>
+                        {panel.description}<br />
                         {panel.tel}
                       </p>
                       <a

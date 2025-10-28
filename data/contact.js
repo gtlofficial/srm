@@ -6,7 +6,7 @@ export const panels = [
     altText: "location-icon",
     title: "Visit us",
     description: "UNIT 1 FIVEFOLD INDUSTRIAL PARK OFF VALE DRIVE OLDHAM OL9 6TP",
-    tel: "Tel:  0161 566 6173",
+    tel: "",
     linkText: "View on maps",
     linkUrl: "#",
   },

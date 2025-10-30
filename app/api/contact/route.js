@@ -67,6 +67,44 @@ export async function POST(req) {
         <hr>    
         <p><strong>Message:</strong>  <span style="text-transform: math-auto;">${message.replace(/\n/g, "")}</span></p>
         <hr>
+        ${body.vehicleCondition
+          ? `
+  <h3 style="margin-top:20px;">Vehicle Condition Details</h3>
+  <table style="width:100%;border-collapse:collapse;border:1px solid #000000;background:##cdcdcd;">
+    <thead>
+      <tr style="background:#8acb37;color:#fff;text-align:left;">
+        <th style="padding:8px;border:1px solid #000000;">Vehicle Part</th>
+        <th style="padding:8px;border:1px solid #000000;">Condition(s)</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${Object.entries(
+            Object.fromEntries(
+              body.vehicleCondition
+                .split("<br>")
+                .map((line) => {
+                  const [part, conditions] = line.split(": ");
+                  return [part, conditions];
+                })
+            )
+          )
+            .map(
+              ([part, conditions]) => `
+        <tr>
+          <td style="padding:8px;border:1px solid #000000;text-transform:uppercase;">${part}</td>
+          <td style="padding:8px;border:1px solid #000000;">${conditions}</td>
+        </tr>
+      `
+            )
+            .join("")}
+    </tbody>
+  </table>
+  <hr>
+  `
+          : `<p><strong>Vehicle Condition:</strong> N/A</p><hr>`
+        }
+
+        <hr>
         <p style="text-align: center;text-transform: math-auto">© SRM Vehicle Repair Centre | <a href="https://smart-route-motors.vercel.app/" style="color:#5d5b5b;text-decoration:none;">www.smart-route-motors.vercel.app</a><br>
   Please contact us at <a href="mailto:srm.vehiclerepaircentre@gmail.com" style="color:#5d5b5b;text-decoration:none;">srm.vehiclerepaircentre@gmail.com</a> for any inquiries.</p>
         </div>

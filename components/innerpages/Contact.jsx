@@ -80,6 +80,10 @@ export default function Contact1() {
           subject: `New Service Inquiry From: ${firstName}`,
           message: `${formData.message || ""}`,
           recaptchaToken,
+          vehicleCondition: Object.entries(formData)
+    .filter(([key, value]) => Array.isArray(value) && value.length > 0)
+    .map(([key, value]) => `${key}: ${value.join(", ")}`)
+    .join("<br>"),
         }),
       });
 
@@ -349,11 +353,29 @@ export default function Contact1() {
                           <p className="fw-bold text-sm">{item.label}</p>
                           <div className="d-flex flex-column flex-wrap mt-1">
                             {item.options.map((opt, i) => (
-                              <label key={i} className="d-flex items-center gap-1 text-sm">
-                                <input type="checkbox" name={`${item.label}-${opt}`} />
-                                {opt}
-                              </label>
-                            ))}
+  <label key={i} className="d-flex items-center gap-1 text-sm">
+    <input
+      type="checkbox"
+      name={`${item.label}`}
+      value={opt}
+      checked={formData[item.label]?.includes(opt) || false}
+      onChange={(e) => {
+        const { name, value, checked } = e.target;
+        setFormData((prev) => {
+          const current = prev[name] || [];
+          return {
+            ...prev,
+            [name]: checked
+              ? [...current, value]
+              : current.filter((v) => v !== value),
+          };
+        });
+      }}
+    />
+    {opt}
+  </label>
+))}
+
                           </div>
                         </div>
                       ))}

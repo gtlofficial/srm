@@ -43,7 +43,7 @@ export default function Contact1() {
     e.preventDefault();
     setLoading(true);
 
-    const { date, make, model, registration, firstName, email, phone, mileage } = formData;
+    const { date, make, model, registration, firstName, email, phone, mileage, postcode } = formData;
 
     if (!firstName || !email || !date || !make || !model || !registration) {
       toast.error("❌ Please fill in all required fields.");
@@ -78,8 +78,7 @@ export default function Contact1() {
           registration: `${registration}`,
           mileage: `${mileage}`,
           subject: `New Inquiry from ${firstName}`,
-           message: `Phone: ${phone || "N/A"}\nPostcode: ${formData.postcode || "N/A"}\n\n${formData.message || ""}`,
-
+          message: `${formData.message || ""}`,
           recaptchaToken,
         }),
       });

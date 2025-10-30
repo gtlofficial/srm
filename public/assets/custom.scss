@@ -128,7 +128,9 @@
   }
 }
 @media (max-width: 768px) {
- 
+     .contact-bg {
+    background-image: none !important;
+  }
   .flex-sm-column {
     flex-direction: column !important; /* Switch to column for small screens */
   }
@@ -228,9 +230,7 @@ html[dir="rtl"] .nav-y .uc-parent::after {
   }
 }
 @media (max-width: 991px) {
-    .contact-bg {
-    background-image: none !important;
-  }
+
   .w-md-100 {
     width: 100% !important;
   }

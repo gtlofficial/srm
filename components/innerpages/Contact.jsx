@@ -344,13 +344,13 @@ export default function Contact1() {
                   ].map((group, gIdx) => (
                     <div
                       key={gIdx}
-                      className="d-flex justify-center lg:justify-between sm:gap-3 gap-2 lg:gap-6 flex-wrap md:pt-2 my-2 lg:pt-6 sm:mb-2 lg:mb-6"
+                      className="d-flex justify-center lg:justify-between sm:gap-2 gap-2 lg:gap-4 flex-wrap md:pt-2 my-2 lg:pt-6 sm:mb-2 lg:mb-6"
                     >
                       {group.map((item, idx) => (
                         <div
                           key={idx}
                           style={{ background: "rgb(255 255 255 / 68%)" }}
-                          className="border p-1 rounded w-128px md:max-w-100px"
+                          className="border p-1 rounded w-128px md:max-w-106px"
                         >
                           <p className="fw-bold text-sm">{item.label}</p>
                           <div className="d-flex flex-column flex-wrap mt-1">

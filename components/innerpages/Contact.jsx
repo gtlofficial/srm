@@ -2,7 +2,7 @@
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useState, useEffect, useRef } from "react";
-import ContactMobile from "./ContactMobile";
+// import ContactMobile from "./ContactMobile";
 export default function Contact1() {
   const [formData, setFormData] = useState({
     date: "",
@@ -81,9 +81,9 @@ export default function Contact1() {
           message: `${formData.message || ""}`,
           recaptchaToken,
           vehicleCondition: Object.entries(formData)
-    .filter(([key, value]) => Array.isArray(value) && value.length > 0)
-    .map(([key, value]) => `${key}: ${value.join(", ")}`)
-    .join("<br>"),
+            .filter(([key, value]) => Array.isArray(value) && value.length > 0)
+            .map(([key, value]) => `${key}: ${value.join(", ")}`)
+            .join("<br>"),
         }),
       });
 
@@ -156,7 +156,7 @@ export default function Contact1() {
             {/* Contact Form */}
             <div className="panel rounded-3 overflow-hidden bg-secondary dark:bg-gray-800">
               <form onSubmit={handleSubmit}
-                className="vstack gap-2 p-3 sm:p-6 xl:p-2"
+                className="vstack gap-2 p-1 md:p-2 lg:p-6 xl:p-2"
               >
                 <p className="fs-6 text-dark dark:text-white text-opacity-70 mb-2">
                   Have a question or feedback? Fill out the form below, and
@@ -298,6 +298,7 @@ export default function Contact1() {
 
                 </div>
                 {/* Vehicle Condition Section */}
+                <div className="">
                 <div className="p-3 dark:text-white">
                   <h3 className="text-lg font-semibold mb-2">Vehicle Condition</h3>
                   <p className="text-sm mb-3">
@@ -305,11 +306,12 @@ export default function Contact1() {
                   </p>
                 </div>
                 <div
-                  className="mt-4 position-relative d-none lg:d-block"
+                  className="mt-4 position-relative contact-bg"
                   style={{
                     backgroundImage: "url('/assets/images/contact/c2.png')",
-                    backgroundSize: "cover",
+                    backgroundSize: "contain",
                     backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
                     fontSize: "13px",
                   }}
                 >
@@ -342,39 +344,39 @@ export default function Contact1() {
                   ].map((group, gIdx) => (
                     <div
                       key={gIdx}
-                      className="d-flex lg:justify-between gap-8 flex-wrap pt-6 mb-6"
+                      className="d-flex justify-center lg:justify-between sm:gap-3 gap-2 lg:gap-6 flex-wrap md:pt-2 my-2 lg:pt-6 sm:mb-2 lg:mb-6"
                     >
                       {group.map((item, idx) => (
                         <div
                           key={idx}
                           style={{ background: "rgb(255 255 255 / 68%)" }}
-                          className="border p-1 rounded"
+                          className="border p-1 rounded w-128px md:max-w-100px"
                         >
                           <p className="fw-bold text-sm">{item.label}</p>
                           <div className="d-flex flex-column flex-wrap mt-1">
                             {item.options.map((opt, i) => (
-  <label key={i} className="d-flex items-center gap-1 text-sm">
-    <input
-      type="checkbox"
-      name={`${item.label}`}
-      value={opt}
-      checked={formData[item.label]?.includes(opt) || false}
-      onChange={(e) => {
-        const { name, value, checked } = e.target;
-        setFormData((prev) => {
-          const current = prev[name] || [];
-          return {
-            ...prev,
-            [name]: checked
-              ? [...current, value]
-              : current.filter((v) => v !== value),
-          };
-        });
-      }}
-    />
-    {opt}
-  </label>
-))}
+                              <label key={i} className="d-flex items-center gap-1 text-sm">
+                                <input
+                                  type="checkbox"
+                                  name={`${item.label}`}
+                                  value={opt}
+                                  checked={formData[item.label]?.includes(opt) || false}
+                                  onChange={(e) => {
+                                    const { name, value, checked } = e.target;
+                                    setFormData((prev) => {
+                                      const current = prev[name] || [];
+                                      return {
+                                        ...prev,
+                                        [name]: checked
+                                          ? [...current, value]
+                                          : current.filter((v) => v !== value),
+                                      };
+                                    });
+                                  }}
+                                />
+                                {opt}
+                              </label>
+                            ))}
 
                           </div>
                         </div>
@@ -382,7 +384,8 @@ export default function Contact1() {
                     </div>
                   ))}
                 </div>
-                <ContactMobile />
+                </div>
+
                 {/* reCAPTCHA */}
                 <div className="mb-2 h-40px">
                   <div ref={recaptchaRef} />

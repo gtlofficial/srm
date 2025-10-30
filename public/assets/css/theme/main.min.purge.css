@@ -5853,6 +5853,9 @@ textarea.form-control-lg {
 .flex-column {
   flex-direction: column !important;
 }
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
 .flex-nowrap {
   flex-wrap: nowrap !important;
 }
@@ -7186,6 +7189,9 @@ textarea.form-control-lg {
   .sm\:d-inline-block {
     display: inline-block !important;
   }
+  .sm\:flex-wrap {
+  flex-wrap: wrap !important;
+}
   .sm\:d-block {
     display: block !important;
   }
@@ -7289,6 +7295,12 @@ textarea.form-control-lg {
   }
   .sm\:mt-6 {
     margin-top: 3rem !important;
+  }
+  .sm\:mb-2 {
+    margin-bottom: 1rem !important;
+  }
+  .sm\:mb-4 {
+    margin-bottom: 2rem !important;
   }
   .sm\:mb-6 {
     margin-bottom: 3rem !important;
@@ -7411,6 +7423,9 @@ textarea.form-control-lg {
   .md\:d-flex {
     display: flex !important;
   }
+  .md\:flex-wrap {
+    display: wrap !important;
+  }
   .md\:d-none {
     display: none !important;
   }
@@ -7431,6 +7446,12 @@ textarea.form-control-lg {
   }
   .md\:w-1\/2 {
     width: 50% !important;
+  }
+  .md\:max-w-75px {
+    max-width: 75px !important;
+  }
+   .md\:max-w-100px {
+    max-width: 100px !important;
   }
   .md\:max-w-128px {
     max-width: 128px !important;
@@ -7491,8 +7512,17 @@ textarea.form-control-lg {
   .md\:me-2 {
     margin-right: 1rem !important;
   }
+  .md\:mb-2 {
+    margin-bottom: 1rem !important;
+  }
   .md\:mb-4 {
     margin-bottom: 2rem !important;
+  }
+  .md\:mb-6 {
+    margin-bottom: 3rem !important;
+  }
+   .md\:mb-8 {
+    margin-bottom: 4rem !important;
   }
   .md\:ms-2 {
     margin-left: 1rem !important;

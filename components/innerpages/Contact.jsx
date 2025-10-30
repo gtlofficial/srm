@@ -350,7 +350,7 @@ export default function Contact1() {
                         <div
                           key={idx}
                           style={{ background: "rgb(255 255 255 / 68%)" }}
-                          className="border p-1 rounded w-128px md:max-w-106px"
+                          className="border p-1 rounded w-158px md:max-w-106px"
                         >
                           <p className="fw-bold text-sm">{item.label}</p>
                           <div className="d-flex flex-column flex-wrap mt-1">

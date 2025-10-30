@@ -77,7 +77,7 @@ export default function Contact1() {
           model: `${model}`,
           registration: `${registration}`,
           mileage: `${mileage}`,
-          subject: `New Inquiry from ${firstName}`,
+          subject: `New Service Inquiry From: ${firstName}`,
           message: `${formData.message || ""}`,
           recaptchaToken,
         }),
@@ -165,12 +165,13 @@ export default function Contact1() {
                   <h3 className="text-lg font-semibold mb-2">Booking Date</h3>
                   <p className="text-sm mb-3">Click on dates that suit you</p>
                   <input
-                    className="form-control min-h-100px w-250px bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
+                    className="form-control min-h-100px w-250px bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white text-uppercase"
                     type="date"
                     name="date"
                     value={formData.date}
                     onChange={handleChange}
                     required
+                    min={new Date().toISOString().split("T")[0]} // 🔒 disables past dates
                   />
                 </div>
 
@@ -181,7 +182,7 @@ export default function Contact1() {
                     <div>
 
                       <input
-                        className="form-control min-h-100px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
+                        className="form-control min-h-100px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white text-uppercase"
                         type="text"
                         name="make"
                         value={formData.make}
@@ -193,7 +194,7 @@ export default function Contact1() {
                     </div>
                     <div>
                       <input
-                        className="form-control min-h-100px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
+                        className="form-control min-h-100px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white text-uppercase"
                         type="text"
                         name="model"
                         value={formData.model}
@@ -204,7 +205,7 @@ export default function Contact1() {
                     </div>
                     <div>
                       <input
-                        className="form-control min-h-100px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
+                        className="form-control min-h-100px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white text-uppercase"
                         type="text"
                         name="registration"
                         value={formData.registration}
@@ -215,7 +216,7 @@ export default function Contact1() {
                     </div>
                     <div>
                       <input
-                        className="form-control min-h-100px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
+                        className="form-control min-h-100px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white text-uppercase"
                         type="text"
                         name="mileage"
                         value={formData.mileage}
@@ -238,7 +239,7 @@ export default function Contact1() {
                         name="firstName"
                         value={formData.firstName}
                         onChange={handleChange}
-                        placeholder="full Name*"
+                        placeholder="FULL NAME*"
                         required
                       />
                     </div>
@@ -249,7 +250,7 @@ export default function Contact1() {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder="Email*"
+                        placeholder="EMAIL*"
                         required
                       />
                     </div>
@@ -260,7 +261,7 @@ export default function Contact1() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="Telephone*"
+                        placeholder="TELEPHONE*"
                         required
                       />
                     </div>
@@ -271,7 +272,7 @@ export default function Contact1() {
                         name="postcode"
                         value={formData.postcode}
                         onChange={handleChange}
-                        placeholder="Postcode*"
+                        placeholder="POSTCODE*"
                         required
                       />
                     </div>
@@ -287,7 +288,7 @@ export default function Contact1() {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Further relevant information/comments:*"
+                    placeholder="Further Relevant Information/Comments:*"
                     required
                   />
 

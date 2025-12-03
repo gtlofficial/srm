@@ -56,14 +56,14 @@ export default function Features() {
                       <div className="absolute inset-0 bg-black/50"></div>
 
                       {/* Content (always visible) */}
-                      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-black p-4 z-10">
+                      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-black p-2 z-10">
                         <h3 className="title h6 m-0">{item.title}</h3>
                         <p className="desc dark:text-white fs-7 xl:fs-6 opacity-90 mt-1">
                           {item.description}
                         </p>
 
                         {/* Hover Button */}
-                        <button className="btn btn-md btn-primary mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <button className="btn btn-md btn-primary mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                           Learn More
                         </button>
                       </div>

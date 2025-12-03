@@ -80,7 +80,7 @@ export default function Header() {
                       className="dark:d-none"
                       alt="Lexend"
                       src="/assets/images/branding/logo.png"
-                      width="117"
+                      width="217"
                       height="40"
                     />
                     <Image

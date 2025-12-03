@@ -22,14 +22,14 @@ export default function Hero() {
                     <Image
                       className="d-block dark:d-none w-100"
                       alt="Main hero image"
-                      src="/assets/images/homepage/BUMP_SCRATCH_SMASH.jpg"
+                      src="/assets/images/homepage/BUMP-SCRATCH-SMASH.jpg"
                       width="1280"
                       height="941"
                     />
                     <Image
                       className="d-none dark:d-block w-100"
                       alt="Main hero image"
-                      src="/assets/images/homepage/BUMP_SCRATCH_SMASH.jpg"
+                      src="/assets/images/homepage/BUMP-SCRATCH-SMASH.jpg"
                       width="1280"
                       height="942"
                     />

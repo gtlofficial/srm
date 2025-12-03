@@ -79,7 +79,7 @@ export const featureItems = [
   },
   {
     order: "order-1 lg:order-0",
-    imgSrc: "/assets/images/homepage/s4.jpg",
+    imgSrc: "/assets/images/homepage/key_scratch.jpg",
     alt: "KEY SCRATCH",
     title: "KEY SCRATCH",
     description: "Key Scratch Repair – Precision Without Full Respray",

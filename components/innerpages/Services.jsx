@@ -41,7 +41,7 @@ export default function Services() {
                     className="text-decoration-none group"
                   >
                     <div
-                      className={`features-item h-750px relative overflow-hidden rounded-2 shadow-sm hover:shadow-md transition-shadow duration-300 ${item.bgClass || ""}`}
+                      className={`features-item h-auto relative overflow-hidden rounded-2 shadow-sm hover:shadow-md transition-shadow duration-300 ${item.bgClass || ""}`}
                     >
                       {/* Image */}
                       <Image

@@ -10,8 +10,8 @@ export default function Testimonials() {
       id="clients_feedbacks"
       className="clients-feedbacks section panel overflow-hidden"
     >
-      <div className="section-outer panel py-2 xl:py-2">
-        <div className="container">
+      <div className="section-outer panel p-2 xl:p-2">
+        <div className="container container-expand">
           <div className="section-inner panel">
             <div
               className="panel vstack justify-center items-center gap-4 sm:gap-6 xl:gap-8"
@@ -35,7 +35,7 @@ export default function Testimonials() {
               <div className="panel w-100">
                 <Swiper
                   spaceBetween={16}
-                  slidesPerView={1.25}
+                  slidesPerView={1.15}
                   centeredSlides
                   initialSlide={2}
                   className="swiper overflow-unset"
@@ -49,7 +49,7 @@ export default function Testimonials() {
                 >
                   {testimonials.map((testimonial, index) => (
                     <SwiperSlide key={index}>
-                      <div className="px-3 sm:px-4 py-4 panel vstack justify-between gap-3 rounded-2 bg-secondary dark:bg-black shadow-sm hover:shadow-md transition-shadow duration-300">
+                      <div className="px-2 sm:px-2 py-2 panel vstack justify-between gap-2 rounded-2 bg-secondary dark:bg-black shadow-sm hover:shadow-md transition-shadow duration-300">
 
                         {/* Quote */}
                         <p className="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70 leading-relaxed">
@@ -58,6 +58,7 @@ export default function Testimonials() {
 
                         {/* User Info */}
                         <div className="panel hstack gap-2 mt-3">
+                          {testimonial.imgSrc && (
                           <Image
                             src={testimonial.imgSrc}
                             alt={testimonial.name}
@@ -65,6 +66,7 @@ export default function Testimonials() {
                             height={150}
                             className="w-40px h-40px rounded-circle object-cover"
                           />
+                          )}
                           <div className="panel vstack justify-center gap-narrow">
                             {/* Stars */}
                             <ul className="nav-x gap-0 text-warning">

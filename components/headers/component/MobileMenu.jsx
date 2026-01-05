@@ -79,6 +79,7 @@ export default function MobileMenu() {
         className="uc-offcanvas-bar bg-white text-dark dark:bg-gray-900 dark:text-white uc-offcanvas-bar-animation uc-offcanvas-slide "
         role="dialog"
         aria-modal="true"
+        aria-label="Mobile navigation menu"
         style={{ maxWidth: 876 }}
       >
         <header className="uc-offcanvas-header hstack justify-between items-center pb-2 bg-white dark:bg-gray-900">
@@ -88,11 +89,11 @@ export default function MobileMenu() {
               className="h5 text-none text-gray-900 dark:text-white"
             >
               <Image
-                className="w-32px"
+                className="w-128px"
                 alt="SRM"
                 src="/assets/images/branding/logo.png"
-                width="34"
-                height="34"
+                width="128"
+                height="128"
               />
             </Link>
           </div>
@@ -100,6 +101,7 @@ export default function MobileMenu() {
             className="uc-offcanvas-close rtl:end-auto rtl:start-0 m-1 mt-2 icon-3 btn border-0 dark:text-white dark:text-opacity-50 hover:text-primary hover:rotate-90 duration-150 transition-all"
             type="button"
             onClick={closeMobileMenu}
+            aria-label="Close menu"
           >
             <i className="unicon-close" />
           </button>

@@ -20,6 +20,6 @@ export const footerLinks = [
 ];
 
 export const socialLinks = [
-  { href: "https://www.facebook.com/srm.vehiclerepaircentre/", iconClass: "unicon-logo-facebook" },
-  { href: "https://www.instagram.com/srm.vehiclerepaircentre/", iconClass: "unicon-logo-instagram" },
+  { href: "https://www.facebook.com/srm.vehiclerepaircentre/", iconClass: "unicon-logo-facebook", label: "Facebook" },
+  { href: "https://www.instagram.com/srm.vehiclerepaircentre/", iconClass: "unicon-logo-instagram", label: "Instagram" },
 ];

@@ -50,13 +50,15 @@ export default function BacktoTop() {
           <span className="slider fs-5"></span>
         </label>
       </div>
-      <a
+      <button
+        type="button"
         className="btn btn-sm bg-primary text-white w-40px h-40px rounded-circle"
         onClick={scrollToTop}
         data-uc-backtotop
+        aria-label="Back to top"
       >
         <i className="icon-2 unicon-chevron-up"></i>
-      </a>
+      </button>
     </div>
   );
 }

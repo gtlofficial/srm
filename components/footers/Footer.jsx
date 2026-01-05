@@ -60,7 +60,9 @@ export default function Footer() {
                 <ul className="nav-x justify-center gap-2 text-gray-300">
                   {socialLinks.map((link, index) => (
                     <li key={index}>
-                      <a href={link.href} target="_blank" alt="social-link">
+                      <a href={link.href} target="_blank" 
+                      rel="noopener noreferrer"
+                      aria-label={`Visit Smart Route Motors on ${link.label}`}>
                         <i className={`icon icon-2 ${link.iconClass}`} />
                       </a>
                     </li>

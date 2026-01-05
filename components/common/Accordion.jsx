@@ -56,7 +56,7 @@ export default function Accordion({
             {item.question}
           </a>
           <div
-            className="uc-accordion-content"
+            className="uc-accordion-content text-start"
             ref={(el) => (answerRefs.current[index] = el)}
           >
             <p>{item.answer}</p>

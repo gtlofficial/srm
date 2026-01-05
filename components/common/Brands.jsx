@@ -27,7 +27,7 @@ export default function Brands() {
           key={index}
         >
           <Image
-            className="brand-item-image image-filter"
+            className="brand-item-image"
             src={brand.src}
             width={165}
             height={95}

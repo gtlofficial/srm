@@ -38,7 +38,7 @@ export default function ContactLinks() {
                           alt={`${panel.altText}-dark`}
                         />
                       </div>
-                      <h5 className="h5 m-0">{panel.title}</h5>
+                      <h2 className="h5 m-0">{panel.title}</h2>
                       <p className="fs-6 opacity-70 dark:opacity-80">
                         {panel.description}<br />
                         {panel.tel}

@@ -25,6 +25,7 @@ export default function Hero() {
                       src="/assets/images/homepage/BUMP-SCRATCH-SMASH.jpg"
                       width="3000"
                       height="1200"
+                      priority
                     />
                     <Image
                       className="d-none dark:d-block w-100"

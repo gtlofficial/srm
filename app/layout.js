@@ -16,7 +16,7 @@ import ContactModal from "@/components/modals/ContactModal";
 import NewsletterModal from "@/components/modals/NewsletterModal";
 import SearchModal from "@/components/modals/SearchModal";
 import { Toaster } from "react-hot-toast"; // ✅ Toast added
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from "@vercel/analytics/next"
 
 export default function RootLayout({ children }) {

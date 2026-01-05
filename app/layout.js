@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     const elements = document.querySelectorAll("[data-anime]");
 
-    const observer = new IntersectionObserver(() => {}, {
+    const observer = new IntersectionObserver(() => { }, {
       threshold: 0,
     });
 
@@ -41,12 +41,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" dir="ltr">
       <body>
-       {/* ✅ reCAPTCHA script here */}
+        {/* ✅ reCAPTCHA script here */}
         <Script
-        src="https://www.google.com/recaptcha/api.js?render=explicit"
-        strategy="beforeInteractive"        
-        async        
-        defer
+          src="https://www.google.com/recaptcha/api.js?render=explicit"
+          strategy="beforeInteractive"
+          async
+          defer
         />
         <Context>
           <ParallaxProvider>{children}</ParallaxProvider>
@@ -55,29 +55,29 @@ export default function RootLayout({ children }) {
           <NewsletterModal />
           <SearchModal />
           <BacktoTop />
-           <SpeedInsights/>
-          <Analytics/>
+          <SpeedInsights />
+          <Analytics />
         </Context>
-     <Toaster
-        toastOptions={{
-          duration: 3000,
-          style: {
-            background: "rgba(0, 0, 0, 0.85)",
-            color: "#fff",
-            fontSize: "16px",
-            padding: "16px 20px",
-            borderRadius: "12px",
-            maxWidth: "100%",
-          },
-        }}
-        containerStyle={{
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          position: "fixed",
-          zIndex: 9999,
-        }}
-      />
+        <Toaster
+          toastOptions={{
+            duration: 3000,
+            style: {
+              background: "rgba(0, 0, 0, 0.85)",
+              color: "#fff",
+              fontSize: "16px",
+              padding: "16px 20px",
+              borderRadius: "12px",
+              maxWidth: "100%",
+            },
+          }}
+          containerStyle={{
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            position: "fixed",
+            zIndex: 9999,
+          }}
+        />
       </body>
     </html>
   );

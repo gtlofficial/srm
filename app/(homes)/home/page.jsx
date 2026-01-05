@@ -21,6 +21,7 @@ export default function HomePage() {
       <div className=" page-wrapper uni-body panel bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200 overflow-x-hidden bp-xs bp-sm bp-md bp-lg dom-ready bp-xl bp-xxl">
         {/* <Topbar /> */}
         <Header />
+         <main id="main-content">
         <div id="wrapper" className="wrap">
           <Hero />
           <div
@@ -57,6 +58,7 @@ export default function HomePage() {
           </div>
           <Testimonials />
         </div>
+        </main>
         <Footer />
       </div>
     </>

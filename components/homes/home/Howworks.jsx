@@ -84,7 +84,7 @@ export default function Howworks() {
                     >
                       <AccordionList limit={4} />
                     </ul>
-                    <a className="btn btn-md btn-primary mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" href="/page-faqs">Learn More</a>
+                    <a className="btn btn-md btn-primary mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" href="/page-faqs">Load More</a>
                   </div>
                 </div>
               </div>

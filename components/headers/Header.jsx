@@ -103,9 +103,10 @@ export default function Header() {
                 >
                   Book An Appointment
                 </Link>
-                <a
+                <button
                   className="d-block lg:d-none uc-icon uc-navbar-toggle-icon"
                   onClick={openMobileMenu}
+                  aria-label="Open mobile menu"
                 >
                   <svg width={20} height={20} viewBox="0 0 20 20">
                     <style
@@ -119,7 +120,7 @@ export default function Header() {
                     <rect className="line-3" y={9} width={20} height={2} />
                     <rect className="line-4" y={15} width={20} height={2} />
                   </svg>
-                </a>
+                </button>
               </div>
             </div>
           </div>

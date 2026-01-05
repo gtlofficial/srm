@@ -24,7 +24,7 @@ export default function Testimonials() {
                 </span>
                 <h2 className="h4 sm:h3 lg:h2 m-0 max-w-650px mx-auto">
                   See what our{" "}
-                  <span className="text-primary">
+                  <span className="fw-bold px-2 py-1 rounded-pill bg-primary text-white">
                     happy users
                   </span>{" "}
                   are sharing about us!

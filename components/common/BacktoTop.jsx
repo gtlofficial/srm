@@ -46,7 +46,7 @@ export default function BacktoTop() {
       >
         <label className="switch">
           <span className="sr-only">Dark mode toggle</span>
-          <input onChange={handleToggle} type="checkbox" checked={isDark} />
+          <input onChange={handleToggle} type="checkbox" checked={isDark} aria-label="Toggle mode"/>
           <span className="slider fs-5"></span>
         </label>
       </div>

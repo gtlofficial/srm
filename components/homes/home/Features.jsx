@@ -20,7 +20,7 @@ export default function Features() {
               className="panel vstack items-center gap-2 xl:gap-3 mb-4 sm:mb-6 lg:mb-8 sm:max-w-600px lg:max-w-700px xl:max-w-800px mx-auto text-center"
               data-anime="onview: -200; targets: >*; translateY:[48,0]; opacity:[0,1]; easing:easeOutCubic; duration:500; delay:anime.stagger(100,{start:200});"
             >
-              <span className="fw-bold py-narrow px-2 border rounded-pill text-primary dark:text-secondary">
+              <span className="fw-bold px-2 py-1 rounded-pill bg-primary text-white py-narrow border">
                 Features
               </span>
               <h2 className="h3 sm:h2 lg:h1 xl:display-6 m-0">Our Services</h2>

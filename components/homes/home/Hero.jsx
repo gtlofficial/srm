@@ -32,6 +32,7 @@ export default function Hero() {
                       src="/assets/images/homepage/BUMP-SCRATCH-SMASH.webp"
                       width={3000}
                       height={1200}
+                      priority
                     />
                   </div>
                   {/* Content */}

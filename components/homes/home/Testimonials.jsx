@@ -52,7 +52,7 @@ export default function Testimonials() {
                       <div className="px-2 sm:px-2 py-2 panel vstack justify-between gap-2 rounded-2 bg-secondary dark:bg-black shadow-sm hover:shadow-md transition-shadow duration-300">
 
                         {/* Quote */}
-                        <p className="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70 leading-relaxed">
+                        <p className="fs-7 lg:fs-6 text-dark dark:text-white text-opacity-70 leading-relaxed">
                           “{testimonial.text}”
                         </p>
 

@@ -12,14 +12,14 @@ export const footerLinks = [
   {
     title: "Social",
     links: [
-      { href: "/blog", label: "Social" },
-      { href: "https://www.facebook.com/", label: "Facebook" },
-      { href: "https://www.instagram.com/", label: "Instagram" },
+      { href: "", label: "Social" },
+      { href: "https://www.facebook.com/srm.vehiclerepaircentre/", target: "_blank", label: "Facebook" },
+      { href: "https://www.instagram.com/srm.vehiclerepaircentre/", target: "_blank", label: "Instagram" },
     ],
   },
 ];
 
 export const socialLinks = [
-  { href: "#", iconClass: "unicon-logo-facebook" },
-  { href: "#", iconClass: "unicon-logo-instagram" },
+  { href: "https://www.facebook.com/srm.vehiclerepaircentre/", iconClass: "unicon-logo-facebook" },
+  { href: "https://www.instagram.com/srm.vehiclerepaircentre/", iconClass: "unicon-logo-instagram" },
 ];

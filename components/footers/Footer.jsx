@@ -60,7 +60,7 @@ export default function Footer() {
                 <ul className="nav-x justify-center gap-2 text-gray-300">
                   {socialLinks.map((link, index) => (
                     <li key={index}>
-                      <a href={link.href}>
+                      <a href={link.href} target="_blank">
                         <i className={`icon icon-2 ${link.iconClass}`} />
                       </a>
                     </li>

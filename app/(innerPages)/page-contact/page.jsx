@@ -4,7 +4,7 @@ import Contact from "@/components/innerpages/Contact";
 import ContactLinks from "@/components/innerpages/ContactLinks";
 export const metadata = {
   title:
-    "SRM  || Contact",
+    "SRM || Contact",
   description:
     "SRM - Vehicle Repair Centre.",
 };
@@ -15,7 +15,6 @@ export default function ContactPage() {
         <Header />
         <div id="wrapper" className="wrap">
           <Contact />
-
           <ContactLinks />
         </div>
         <Footer />

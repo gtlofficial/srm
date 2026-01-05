@@ -11,7 +11,7 @@ import ContactLinks from "@/components/innerpages/ContactLinks";
 import React from "react";
 export const metadata = {
   title:
-    "SRM  || Homepage",
+    "SRM || Homepage",
   description:
     "SRM - Vehicle Repair Centre.",
 };

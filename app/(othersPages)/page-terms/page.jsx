@@ -5,9 +5,9 @@ import Breadcumb from "@/components/otherPages/Breadcumb";
 import Terms from "@/components/otherPages/Terms";
 export const metadata = {
   title:
-    "Terms || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Terms || SRM - Vehicle Repair Centre",
   description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "SRM - Vehicle Repair Centre.",
 };
 export default function TermsPage() {
   return (

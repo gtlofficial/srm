@@ -3,7 +3,7 @@ import Footer from "@/components/footers/Footer";
 import FaqMain from "@/components/innerpages/FaqMain";
 export const metadata = {
   title:
-    "SRM  || Faq",
+    "SRM || Faq",
   description:
     "SRM - Vehicle Repair Centre.",
 };

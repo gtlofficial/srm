@@ -5,9 +5,9 @@ import Breadcumb from "@/components/otherPages/Breadcumb";
 import Notfound from "@/components/otherPages/404";
 export const metadata = {
   title:
-    "Not Found || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Not Found || SRM - Vehicle Repair Centre",
   description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "SRM - Vehicle Repair Centre.",
 };
 export default function page() {
   return (

@@ -8,7 +8,7 @@ export const panels = [
     description: "UNIT 1 FIVEFOLD INDUSTRIAL PARK OFF VALE DRIVE OLDHAM OL9 6TP",
     tel: "",
     linkText: "View on maps",
-    linkUrl: "#",
+    linkUrl: "https://www.google.com/maps/place/SRM+vehicle+repair+centre/@53.5391923,-2.1299511,17z/data=!3m1!4b1!4m9!1m2!2m1!1ssrm+vehicle+repair+centre+uk!3m5!1s0x487bb7aded6162ff:0x76c92fc8911b0686!8m2!3d53.5391924!4d-2.1250748!16s%2Fg%2F11x_ly5qv3?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ export const panels = [
     title: "Via chat",
     description: "Get instant answers.",
     linkText: "Let's chat",
-    linkUrl: "#",
+    linkUrl: "https://wa.me/+441615666173",
   },
   // {
   //   id: 3,

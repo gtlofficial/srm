@@ -44,7 +44,7 @@ export default function ContactLinks() {
                         {panel.tel}
                       </p>
                       <a
-                        href={panel.linkUrl}
+                        href={panel.linkUrl} target="_blank"
                         className="uc-link- fw-bold hstack gap-narrow justify-center"
                       >
                         <span>{panel.linkText}</span>

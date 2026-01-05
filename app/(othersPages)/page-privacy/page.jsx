@@ -5,9 +5,9 @@ import Breadcumb from "@/components/otherPages/Breadcumb";
 import Privacy from "@/components/otherPages/Privacy";
 export const metadata = {
   title:
-    "Privacy || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Privacy || SRM - Vehicle Repair Centre",
   description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "SRM - Vehicle Repair Centre.",
 };
 export default function PrivacyPage() {
   return (

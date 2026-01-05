@@ -6,9 +6,9 @@ import Faq from "@/components/innerpages/Faq";
 import Team from "@/components/innerpages/Team";
 export const metadata = {
   title:
-    "Team || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Team || SRM - Vehicle Repair Centre",
   description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "SRM - Vehicle Repair Centre.",
 };
 export default function TeamPage() {
   return (

@@ -392,7 +392,7 @@ export default function Contact1() {
                 </div>
 
                 {/* Submit */}
-                <button className="btn btn-primary btn-md text-white mt-2" type="submit" disabled={loading}>
+                <button className="btn btn-primary m-auto btn-md text-white mt-2" type="submit" disabled={loading}>
                   {loading ? "Sending please wait..." : "Send message"}
                 </button>
 

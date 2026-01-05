@@ -6,7 +6,7 @@ import About2 from "@/components/innerpages/About2";
 import Feedback from "@/components/homes/home/Feedback";
 export const metadata = {
   title:
-    "SRM  || About",
+    "SRM || About",
   description:
     "SRM - Vehicle Repair Centre.",
 };

@@ -41,7 +41,7 @@ export default function Testimonials() {
                   className="swiper overflow-unset"
                   breakpoints={{
                     1024: {
-                      slidesPerView: 4,
+                      slidesPerView: 3,
                       spaceBetween: 24,
                       centeredSlides: false,
                     },
@@ -52,7 +52,7 @@ export default function Testimonials() {
                       <div className="px-2 sm:px-2 py-2 panel vstack justify-between gap-2 rounded-2 bg-secondary dark:bg-black shadow-sm hover:shadow-md transition-shadow duration-300">
 
                         {/* Quote */}
-                        <p className="fs-7 lg:fs-6 text-dark dark:text-white text-opacity-70 leading-relaxed">
+                        <p className="fs-7 lg:fs-7 text-dark dark:text-white">
                           “{testimonial.text}”
                         </p>
 

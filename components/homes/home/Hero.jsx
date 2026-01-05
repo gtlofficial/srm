@@ -23,15 +23,15 @@ export default function Hero() {
                       className="d-block dark:d-none w-100"
                       alt="Main hero image"
                       src="/assets/images/homepage/BUMP-SCRATCH-SMASH.jpg"
-                      width="1280"
-                      height="941"
+                      width="3000"
+                      height="1200"
                     />
                     <Image
                       className="d-none dark:d-block w-100"
                       alt="Main hero image"
                       src="/assets/images/homepage/BUMP-SCRATCH-SMASH.jpg"
-                      width="1280"
-                      height="942"
+                      width="3000"
+                      height="1200"
                     />
                   </div>
                    {/* Content */}

@@ -52,7 +52,7 @@ export const features = [
 export const featureItems = [
   {
     order: "order-1 sm:order-1 lg:order-1",
-    imgSrc: "/assets/images/homepage/ALL_THINGS_BODYWORK.jpg",
+    imgSrc: "/assets/images/homepage/ALL_THINGS_BODYWORK.webp",
     alt: "ALL THINGS BODYWORK ",
     title: "ALL THINGS BODYWORK ",
     description: "Complete Bodywork Solutions – We’ve Got You Covered ",
@@ -61,7 +61,7 @@ export const featureItems = [
   },
   {
     order: "order-1 sm:order-1 lg:order-1",
-    imgSrc: "/assets/images/homepage/KNOW_YOUR_RIGHTS.jpg",
+    imgSrc: "/assets/images/homepage/KNOW_YOUR_RIGHTS.webp",
     alt: "INSURANCE FAULT AND NON-FAULT",
     title: "INSURANCE FAULT AND NON-FAULT",
     description: "Insurance Repairs – Your Right, Your Choice",
@@ -70,7 +70,7 @@ export const featureItems = [
   },
   {
     order: "order-2 sm:order-2 lg:order-2",
-    imgSrc: "/assets/images/homepage/BUMP_SCRATCH_SMASH.jpg",
+    imgSrc: "/assets/images/homepage/BUMP_SCRATCH_SMASH.webp",
     alt: "BUMPER SCUFF",
     title: "BUMPER SCUFF",
     description: "Bumper Scuff Repairs – Full or Smart Solutions",
@@ -79,7 +79,7 @@ export const featureItems = [
   },
   {
     order: "order-3 sm:order-3 lg:order-3",
-    imgSrc: "/assets/images/homepage/Detailing.jpg",
+    imgSrc: "/assets/images/homepage/Detailing.webp",
     alt: "CAR DETAILING ",
     title: "CAR DETAILING ",
     description: "Car Detailing- Bring Your Car Back To Life",
@@ -88,7 +88,7 @@ export const featureItems = [
   },
   {
     order: "order-4 sm:order-4 lg:order-4",
-    imgSrc: "/assets/images/homepage/key_scratch.jpg",
+    imgSrc: "/assets/images/homepage/key_scratch.webp",
     alt: "KEY SCRATCH",
     title: "KEY SCRATCH",
     description: "Key Scratch Repair – Precision Without Full Respray",
@@ -98,7 +98,7 @@ export const featureItems = [
 
   {
     order: "order-5 sm:order-5 lg:order-5",
-    imgSrc: "/assets/images/homepage/Full_panel_replacement.jpg",
+    imgSrc: "/assets/images/homepage/Full_panel_replacement.webp",
     alt: "FULL PANEL REPLACEMENT",
     title: "FULL PANEL REPLACEMENT",
     description: "Panel Replacement – Precision Fit & Perfect Alignment",
@@ -107,7 +107,7 @@ export const featureItems = [
   },
   {
     order: "order-6 sm:order-6 lg:order-6",
-    imgSrc: "/assets/images/homepage/ALLOY_WHEEL_REPAIR.jpg",
+    imgSrc: "/assets/images/homepage/ALLOY_WHEEL_REPAIR.webp",
     alt: "WHEEL REFURB ",
     title: "WHEEL REFURB ",
     description: "Wheel Refurbishment – Restore Factory Finish & Style",
@@ -116,7 +116,7 @@ export const featureItems = [
   },
   {
     order: "order-7 sm:order-7 lg:order-7",
-    imgSrc: "/assets/images/homepage/Colour_matching.jpg",
+    imgSrc: "/assets/images/homepage/Colour_matching.webp",
     alt: "COLOUR MATCHING",
     title: "COLOUR MATCHING",
     description: "Colour Matching – Precision Backed by Experience",
@@ -125,7 +125,7 @@ export const featureItems = [
   },
   {
     order: "order-8 sm:order-8 lg:order-8",
-    imgSrc: "/assets/images/homepage/Cosmetic_repairs.jpg",
+    imgSrc: "/assets/images/homepage/Cosmetic_repairs.webp",
     alt: "COSMETIC",
     title: "COSMETIC",
     description: "Cosmetic Repairs & Styling – Make Your Car Stand Out",

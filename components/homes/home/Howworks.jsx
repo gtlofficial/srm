@@ -21,7 +21,7 @@ export default function Howworks() {
               >
                 <figure className="featured-image m-0 ratio ratio-1x1 overflow-hidden rounded-1-5 lg:rounded-2 lg:rounded-top-start-0">
                   <Image
-                    src="/assets/images/homepage/img-w-text1.jpg"
+                    src="/assets/images/homepage/img-w-text1.webp"
                     alt="About SRM Auto Services"
                     width={1200}
                     height={1200}

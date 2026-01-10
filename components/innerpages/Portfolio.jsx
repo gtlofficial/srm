@@ -31,11 +31,14 @@ const Portfolio = () => {
               <div className="feature-item panel p-2 border rounded dark:text-white hover:scale-105 duration-150 transition-all">
 
                 <div className="card-img-top overflow-hidden position-relative">
-                  <img
+                  <img onClick={() => {
+                        setSelectedProject(item);
+                        openPortfolioModal();
+                      }}
                     src={item.image}
                     alt={item.title}
                     className="img-fluid w-100 transition-scale"
-                    style={{ height: "300px", objectFit: "cover" }}
+                    style={{ height: "300px", objectFit: "cover", cursor: "pointer" }}
                   />
                 </div>
 
@@ -52,7 +55,7 @@ const Portfolio = () => {
                       }}
                       className="px-3 btn btn-md h-48px lg:h-56px w-150px btn-primary text-white"
                     >
-                      View Details
+                      View
                     </button>
                   </div>
                 </div>

@@ -35,7 +35,7 @@ const Portfolio = () => {
                     src={item.image}
                     alt={item.title}
                     className="img-fluid w-100 transition-scale"
-                    style={{ height: "300px", objectFit: "contain" }}
+                    style={{ height: "300px", objectFit: "cover" }}
                   />
                 </div>
 

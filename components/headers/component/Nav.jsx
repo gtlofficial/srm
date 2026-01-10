@@ -21,6 +21,9 @@ export default function Nav() {
       <li>
         <Link href={`/page-contact`}>Contact</Link>
       </li>
+      <li>
+        <Link href={`/page-gallery`}>Gallery</Link>
+      </li>
     </>
   );
 }

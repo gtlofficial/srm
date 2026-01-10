@@ -19,6 +19,11 @@ export const menuItems = [
     href: "/page-contact",
     label: "Contact",
   },
+  {
+    id: 5,
+    href: "/page-gallery",
+    label: "Gallery",
+  },
 ];
 
 

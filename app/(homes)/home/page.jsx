@@ -2,11 +2,10 @@ import Brands from "@/components/common/Brands";
 import Footer from "@/components/footers/Footer";
 // import Topbar from "@/components/headers/Topbar";
 import Header from "@/components/headers/Header";
-import Features from "@/components/homes/home/Features";
-import Hero from "@/components/homes/home/Hero";
-import Howworks from "@/components/homes/home/Howworks";
-import Hotspot from "@/components/homes/home/Hotspot";
-import Testimonials from "@/components/homes/home/Testimonials";
+ 
+ 
+ 
+ 
 import ContactLinks from "@/components/innerpages/ContactLinks";
 import React from "react";
 export const metadata = {
@@ -23,7 +22,7 @@ export default function HomePage() {
         <Header />
          <main id="main-content">
         <div id="wrapper" className="wrap">
-          <Hero />
+    
           <div
             id="companies_sponsores"
             className="companies-sponsores p-2 sm:p-6 section panel overflow-hidden rounded-bottom-3 bg-black text-white dark:bg-gray-700 dark:bg-opacity-50"
@@ -50,13 +49,8 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <Features />
-          <hr className="w-100 m-0 d-block lg:d-none" />
-          <Howworks />
-          <div className="pt-6">
-            <ContactLinks />
-          </div>
-          <Testimonials />
+       
+   
         </div>
         </main>
         <Footer />

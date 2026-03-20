@@ -1,9 +1,9 @@
 import Home from "./(homes)/home/page";
 export const metadata = {
   title:
-    "SRM  || Homepage",
+    "Website Not found",
   description:
-    "SRM - Vehicle Repair Centre.",
+    "Website Not found",
 };
 export default function HomePage5() {
   return (

@@ -6,9 +6,9 @@ import Header from "@/components/headers/Header";
 import React from "react";
 export const metadata = {
   title:
-    "SRM || Homepage",
+    "Website Not found",
   description:
-    "SRM - Vehicle Repair Centre.",
+    "Website Not found",
 };
 export default function HomePage() {
   return (

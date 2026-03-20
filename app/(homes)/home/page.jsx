@@ -1,6 +1,6 @@
-import Brands from "@/components/common/Brands";
+ 
 import Footer from "@/components/footers/Footer";
-// import Topbar from "@/components/headers/Topbar";
+ 
 import Header from "@/components/headers/Header";
  
 import React from "react";

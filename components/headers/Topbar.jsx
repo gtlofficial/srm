@@ -7,24 +7,7 @@ export default function Topbar() {
       data-uc-alert=""
       data-anime="opacity: [0, 1]; easing: easeInOutcubic; duration: 500; delay: 0;"
     >
-      <a
-        href="#"
-        className="uc-alert-close top-0 end-0"
-        style={{ margin: 14 }}
-        data-uc-close=""
-      />
-      <p>
-        The Lexend AI automation guide is here.{" "}
-        <br className="d-block lg:d-none" />
-        <a
-          href="https://themeforest.net/item/lexend-software-saas-startup-nextjs-template/54003483/"
-          className="uc-link text-tertiary dark:text-primary border-bottom"
-          target="_blank"
-          rel="nofollow"
-        >
-          Check it out!
-        </a>
-      </p>
+ 
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import Home from "./(homes)/home/page";
+ 
 export const metadata = {
   title:
     "Website Not found",
@@ -8,7 +8,7 @@ export const metadata = {
 export default function HomePage5() {
   return (
     <>
-      <Home />
+     
     </>
   );
 }

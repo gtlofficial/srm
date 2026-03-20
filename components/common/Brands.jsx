@@ -26,7 +26,13 @@ export default function Brands() {
           className="brand-item swiper-slide text-center"
           key={index}
         >
-  
+          <Image
+            className="brand-item-image"
+            src={brand.src}
+            width={165}
+            height={95}
+            alt={brand.alt}
+          />
         </SwiperSlide>
       ))}
     </Swiper>

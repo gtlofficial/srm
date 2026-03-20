@@ -22,5 +22,22 @@ export default function Brands2() {
       },
     },
   };
- 
+  return (
+    <Swiper {...swiperOptions}>
+      {brands.map((brand, index) => (
+        <SwiperSlide
+          className="brand-item swiper-slide text-center"
+          key={index}
+        >
+          <Image
+            className="brand-item-image h-40px image-filter"
+            src={brand.src}
+            width={165}
+            height={48}
+            alt={brand.alt}
+          />
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  );
 }

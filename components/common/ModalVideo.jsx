@@ -7,7 +7,24 @@ const ModalVideo = ({ videoId, isOpen, setIsOpen, src }) => {
     <>
       {isOpen && (
         <div style={overlayStyle} onClick={closeModal}>
-        
+          <div style={modalStyle} onClick={(e) => e.stopPropagation()}>
+            <button onClick={closeModal} style={closeButtonStyle}>
+              ×
+            </button>
+            <div style={responsiveIframeContainerStyle}>
+              <iframe
+                src={
+                  src
+                    ? src
+                    : `https://www.youtube.com/embed/${videoId}?autoplay=1`
+                }
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={iframeStyle}
+              ></iframe>
+            </div>
+          </div>
         </div>
       )}
     </>

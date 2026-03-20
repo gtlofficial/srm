@@ -12,7 +12,8 @@ export default function TeamPage() {
     <>
       <div className="page-wrapper uni-body panel bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200 overflow-x-hidden bp-xs bp-sm bp-md dom-ready bp-xxl-max bp-lg bp-xl">
         <Header />
-        
+ 
+
         <Footer />
       </div>
     </>

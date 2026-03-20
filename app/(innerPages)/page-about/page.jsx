@@ -4,9 +4,9 @@ import Footer from "@/components/footers/Footer";
  
 export const metadata = {
   title:
-    "SRM || About",
+    "Website Not found",
   description:
-    "SRM - Vehicle Repair Centre.",
+    "Website Not found",
 };
 export default function AboutPage() {
   return (

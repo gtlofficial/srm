@@ -40,31 +40,7 @@ export default function BacktoTop() {
         isVisible ? "uc-active" : ""
       }`}
     >
-      <div
-  className="darkmode-trigger cstack w-40px h-40px rounded-circle text-none bg-gray-100 dark:bg-gray-700 dark:text-white"
-  data-darkmode-toggle=""
->
-  <label className="switch">
-    <span className="sr-only">Dark mode toggle</span>
-    <input
-      type="checkbox"
-      checked={isDark}
-      onChange={handleToggle}
-      aria-label="Dark mode"
-      role="switch"
-    />
-    <span className="slider fs-5"></span>
-  </label>
-</div>
-      <button
-        type="button"
-        className="btn btn-sm bg-primary text-white w-40px h-40px rounded-circle"
-        onClick={scrollToTop}
-        data-uc-backtotop
-        aria-label="Back to top"
-      >
-        <i className="icon-2 unicon-chevron-up"></i>
-      </button>
+       
     </div>
   );
 }

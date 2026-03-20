@@ -55,20 +55,8 @@ export default function Accordion({
           onClick={() => setCurrentIndex((prev) => (prev == index ? -1 : index))}
           key={index}
         >
-          <a
-            className="uc-accordion-title fs-5 sm:fs-4"
-            role="button"
-            aria-disabled="false"
-            ref={(el) => (questionRefs.current[index] = el)}
-          >
-            {item.question}
-          </a>
-          <div
-            className="uc-accordion-content"
-            ref={(el) => (answerRefs.current[index] = el)}
-          >
-            <p>{item.answer}</p>
-          </div>
+    
+     
         </li>
       ))}
     </>

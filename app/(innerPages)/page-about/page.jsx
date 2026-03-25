@@ -18,7 +18,7 @@ export default function AboutPage() {
         <div id="wrapper" className="wrap">
           <About />
           <About2 />
- 
+          <Feedback />
         </div>
         <Footer />
       </div>
